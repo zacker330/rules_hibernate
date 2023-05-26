@@ -14,13 +14,10 @@ HBERNATE_VERSION = "6.2.0.Final"
 
 maven_install(
     artifacts = [
-
         "org.hibernate.orm:hibernate-ant:6.2.0.Final",
         "org.hibernate.orm:hibernate-core:6.2.0.Final",
         "jakarta.persistence:jakarta.persistence-api:3.1.0",
         "org.reflections:reflections:0.10.2",
-
-
     ],
     fetch_sources = False,
     # maven_install_json = "//:maven_install.json",
@@ -28,6 +25,5 @@ maven_install(
         "https://maven.aliyun.com/repository/public",
 #        "https://repo1.maven.org/maven2",
     ],
-    # version_conflict_policy = "pinned",
 )
 
