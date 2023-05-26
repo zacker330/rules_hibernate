@@ -17,5 +17,5 @@ jobs:
       uses: actions/cache@v3
       with:
         path: "~/.cache/${{ matrix.os }}-bazel"
-        key: rules_prometheus_${{ matrix.os }}
+        key: rules_hibernate_${{ matrix.os }}
     - run: bazel build //... && bazel test //...
