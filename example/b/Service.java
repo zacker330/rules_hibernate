@@ -10,6 +10,8 @@ public class Service {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
+    @Embedded
+    private Address address;
 
     @TenantId
     private String tenantId;
@@ -32,5 +34,13 @@ public class Service {
 
     public void setTenantId(String tenantId) {
         this.tenantId = tenantId;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
     }
 }
